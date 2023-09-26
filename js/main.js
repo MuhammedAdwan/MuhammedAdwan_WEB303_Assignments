@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadContent(contentID) {
       let xhr = new XMLHttpRequest();
   
-      xhr.onreadystatechange = function () {
+      /* xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
           if (xhr.status === 200) {
             contentDiv.style.display = 'none';
@@ -15,6 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
           } else {
             contentDiv.innerHTML = "<p>Page Not Found!!</p>";
           }
+        }
+      }; */
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          contentDiv.style.display = 'none';
+          contentDiv.innerHTML = xhr.responseText;
+          contentDiv.style.display = 'block';
+        } else {
+          contentDiv.innerHTML = "<p>Page Not Found!!</p>";
         }
       };
   
