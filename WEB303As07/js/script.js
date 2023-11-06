@@ -10,7 +10,7 @@ $(function () {
         $('#myModal').css('display', 'block');
         $('#myModal img').attr('src', $content.attr('src'));
     });
-    
+
     // Close the modal when the close button is clicked
     $('.close').click(function () {
         $('#myModal').css('display', 'none');
