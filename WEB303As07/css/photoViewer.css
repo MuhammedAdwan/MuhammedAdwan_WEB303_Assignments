@@ -1,5 +1,5 @@
 #photo-viewer {
-  display: inline-block;
+  display: block;
 }
 #photo-viewer .photo-box {
   position: relative;
