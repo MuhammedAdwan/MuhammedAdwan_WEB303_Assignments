@@ -8,6 +8,7 @@ $(document).ready(function () {
     $('#close').on('click', function () {
         $("#box-container").hide();
     });
+    $('.photo-box').removeClass('is-loading');
 
     // Photo Viewer
     $('#img-container').on({
