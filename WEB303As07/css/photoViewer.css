@@ -27,8 +27,8 @@
   height: 45px;
 }
 #photo-viewer .thumbnail-anchor img.active {
-  width: 450px;
-  height: 800px;
+  width: 800px;
+  height: 450px;
 }
 
 .photo-box {

@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     // Set the size of the loading section
     $('.photo-box').css({
-      width: '840px',
+      width: '800px',
       height: '400px',
     });
 
