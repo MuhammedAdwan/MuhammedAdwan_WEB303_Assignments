@@ -1,0 +1,51 @@
+[
+    {
+        "firstName": "Wade",
+        "lastName": "Wilson",
+        "age": 35,
+        "occupation": "Mercenary",
+        "description": "A witty and unconventional anti-hero with a regenerative healing factor."
+    },
+    {
+        "firstName": "Tony",
+        "lastName": "Stark",
+        "age": 45,
+        "occupation": "Billionaire, Inventor",
+        "description": "Genius inventor and the armored superhero Iron Man."
+    },
+    {
+        "firstName": "Bruce",
+        "lastName": "Wayne",
+        "age": 40,
+        "occupation": "Philanthropist, Vigilante",
+        "description": "The wealthy playboy who becomes the caped crusader, Batman."
+    },
+    {
+        "firstName": "Peter",
+        "lastName": "Parker",
+        "age": 22,
+        "occupation": "Photographer, Superhero",
+        "description": "A high school student who becomes Spider-Man."
+    },
+    {
+        "firstName": "Diana",
+        "lastName": "Prince",
+        "age": 30,
+        "occupation": "Amazon Princess, Superhero",
+        "description": "Princess of Themyscira and the iconic Wonder Woman."
+    },
+    {
+        "firstName": "Clark",
+        "lastName": "Kent",
+        "age": 35,
+        "occupation": "Journalist, Superhero",
+        "description": "Mild-mannered reporter who is Superman in disguise."
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "age": 25,
+        "occupation": "Wizard, Seeker of Truth",
+        "description": "The famous wizard who defeated the dark lord Voldemort."
+    }
+]
