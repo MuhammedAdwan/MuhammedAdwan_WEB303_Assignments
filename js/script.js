@@ -20,7 +20,7 @@ $headerRow.append('<td>First Name</td>');
 $headerRow.append('<td>Last Name</td>');
 $headerRow.append('<td>Age</td>');
 $headerRow.append('<td>Occupation</td>');
-$headerRow.append('<td>Description</td>'); // Change "City" to "Description"
+$headerRow.append('<td>Description</td>');
 
 // create search input
 $('h1').after('<input/>');
@@ -33,7 +33,7 @@ $('button#filter-am').after('<button id="filter-nz">N - Z (0)</button>');
 // get and populate the table with json file info
 $.ajax({
     type: 'GET',
-    url: 'characters.json', // assuming your JSON file is named characters.json
+    url: 'characters.json', // changed the url from emp to characters.json
     dataType: 'json',
     error: function () {
         $('.tb1').empty().append('<h1>File not Found</h1>');
@@ -48,7 +48,7 @@ $.ajax({
             $row.append($('<td></td>').text(value.lastName));
             $row.append($('<td></td>').text(value.age));
             $row.append($('<td></td>').text(value.occupation));
-            $row.append($('<td></td>').text(value.description)); // Change "city" to "description"
+            $row.append($('<td></td>').text(value.description));
             // add the row to the table
             $('tbody').append($row);
         });
@@ -94,8 +94,8 @@ $.ajax({
 function filterByLastName(startLetter1, startLetter2) {
     $('tbody tr').each(function () {
         let lastName = $(this).find('td:nth-child(2)').text().trim().toLowerCase();
-        let startLetter = lastName.charAt(0).toLowerCase();
-        if (startLetter >= startLetter1 && startLetter <= startLetter2) {
+        let startLetter = lastName.charAt(0);
+        if (startLetter >= startLetter1.toLowerCase() && startLetter <= startLetter2.toLowerCase()) {
             $(this).show();
         } else {
             $(this).hide();
@@ -110,14 +110,14 @@ function updateFilterCounts() {
     let countAM = $('#filter-am');
     countAM.text('A - M (' + $('tbody tr:visible').filter(function () {
         let lastName = $(this).find('td:nth-child(2)').text().trim().toLowerCase();
-        let startLetter = lastName.charAt(0).toLowerCase();
+        let startLetter = lastName.charAt(0);
         return startLetter >= 'a' && startLetter <= 'm';
     }).length + ')');
 
     let countNZ = $('#filter-nz');
     countNZ.text('N - Z (' + $('tbody tr:visible').filter(function () {
         let lastName = $(this).find('td:nth-child(2)').text().trim().toLowerCase();
-        let startLetter = lastName.charAt(0).toLowerCase();
+        let startLetter = lastName.charAt(0);
         return startLetter >= 'n' && startLetter <= 'z';
     }).length + ')');
 }
