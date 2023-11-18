@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Joe Doe",
+        "age": "25",
+        "occupation": "Engineer",
+        "city": "Windsor",
+        "project": "3-5",
+        "hired" : "2018-01-01"
+    },
+    {
+        "name": "Mary smith",
+        "age": "32",
+        "occupation": "Nurse",
+        "city": "Toronto",
+        "project": "1-3",
+        "hired" : "2015-11-01"
+    },
+    {
+        "name": "Max Kile",
+        "age": "21",
+        "occupation": "Student",
+        "city": "LaSalle",
+        "project": "5-7",
+        "hired" : "2019-01-01"
+    },
+    {
+        "name": "Dean Boo",
+        "age": "47",
+        "occupation": "Professor",
+        "city": "London",
+        "project": "1-7",
+        "hired" : "2012-02-11"
+    },
+    {
+        "name": "Jane Phoon",
+        "age": "28",
+        "occupation": "Student",
+        "city": "Quebec",
+        "project": "2-5",
+        "hired" : "2011-01-01"
+    }
+    
+]

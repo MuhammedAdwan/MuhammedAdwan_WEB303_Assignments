@@ -1,0 +1,50 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    margin-left: 10px;
+    border: 2px solid blue;
+    width: 20%;
+    padding: 5px;
+
+}
+
+table {
+    margin: 20px auto;
+    border: 2px solid blue;
+}
+
+td {
+    width: 10%;
+    font-size: 20px;
+}
+
+thead td a{
+    font-weight: bold;
+    font-size: 25px;
+    color: lightblue;
+    cursor: pointer;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+a.ascending::after {
+    content: " \25B2";
+}
+
+a.descending::after {
+    content: " \25BC";
+}
+
+a.no-sort::after {
+    content: "";
+}
