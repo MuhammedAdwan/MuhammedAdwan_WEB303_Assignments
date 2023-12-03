@@ -32,12 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        // Display welcome message
-        var selectedCountry = countrySelect.options[countrySelect.selectedIndex].text;
-        welcomeMessage.innerText = `Welcome ${usernameInput.value}! The country code you selected is ${selectedCountry}.`;
+        // Display welcome message with the country code
+        var selectedCountryCode = countrySelect.value;
+        welcomeMessage.innerText = `Welcome ${usernameInput.value}! The country code you selected is ${selectedCountryCode}.`;
         welcomeMessage.style.display = "block";
-
-        // You can redirect to /register or perform other actions if needed
     });
 
     // Function to validate the form and enable/disable the submit button
